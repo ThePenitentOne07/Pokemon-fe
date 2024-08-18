@@ -24,6 +24,8 @@ export const DetailPage = () => {
 	}, [id, dispatch]);
 
 	const weaknesses = calculateWeaknesses(pokemon?.types);
+	console.log(pokemon.url);
+
 	return (
 		<Container maxWidth="lg" disableGutters sx={styles.container}>
 			<Box position="relative">
